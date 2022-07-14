@@ -1,12 +1,8 @@
 :root{
-    --primary-font: 'Roboto', sans-serif;
-    --secondary-font: 'Raleway', sans-serif;
-    --primary-text-color-theme-dark: #212121 
-    --primary-text-color-theme-light: #FFFFFF
-    --secondary-text-color-theme-dark: #757575 
-  --secondary-text-color-theme-light: rgba(255, 255, 255, 0.6);
---accent-btn-color: #F5F4FA
-    --accent-color: #2196F3;
+--primary-text-color-dark:#212121;
+--secondary-text-color-dark:#757575;
+--primary-text-color-light:#FFFFFF;
+--accent-color:#2196F3;
 
 
 }
@@ -21,8 +17,8 @@
 }
 
 body {
-    font-family:roboto ; 
-    font-family: var(--primary-font)
+    font-family: 'Roboto', sans-serif; ; 
+   
 
 }
 
@@ -32,8 +28,10 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-cursor: auto;
+
+
 color: var(--accent-color)
+
 
 
 }
@@ -44,7 +42,10 @@ color: var(--accent-color)
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: var(--primary-text-color-theme-dark)
+        cursor: auto;
+        
+        color: var(--primary-text-color-dark)
+        
 
 }
 .menu-link{
@@ -54,11 +55,11 @@ color: var(--accent-color)
         line-height: 1.14;
         letter-spacing: 0.02em;
     
-        color: var(--primary-text-color-theme-dark)
+        color: var(--primary-text-color-dark)
 }
 .menu-link:hover,
 .menu-link:focus{
-color: var(--accent-color)
+color: #2196F3;
 }
 .mail-link{
     
@@ -67,7 +68,7 @@ color: var(--accent-color)
         line-height: 1.14;
         letter-spacing: 0.02em;
     
-        color: var(--secondary-text-color-theme-dark)
+        color: var(--secondary-text-color-dark)
 }
 .mail-link:hover,
 .mail-link:focus {
@@ -80,7 +81,7 @@ color: var(--accent-color)
         line-height: 1.14;
         letter-spacing: 0.02em;
     
-        color: var(--secondary-text-color-theme-dark)
+        color: var(--secondary-text-color-dark)
 
 }
 .phone-namber:hover,
@@ -95,15 +96,16 @@ color: var(--accent-color)
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    background: #F5F4FA;
     cursor: pointer;
 
-    color: var(--primary-text-color-theme-dark)
+    color: var(--primary-text-color-dark)
 }
 .btn:hover,
 .btn:focus{
     background: #2196F3;
-    color: #FFFFFF;
-    background-color: var(--accent-btn-color);
+    color: var(--primary-text-color-light);
+    
     
     
  
@@ -117,7 +119,7 @@ color: var(--accent-color)
         text-align: center;
         letter-spacing: 0.06em;
     
-        color: var(--primary-text-color-theme-light)
+        color: var(--primary-text-color-light)
        
             
             
@@ -139,8 +141,8 @@ color: var(--accent-color)
         cursor: pointer;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-        background: #2196F3;
-   color: var(--primary-text-color-theme-light)
+    background: #2196F3;   
+   color: var(--primary-text-color-light)
 }
 .buttom:hover,
 .buttom:focus{
@@ -151,14 +153,14 @@ background: #2196F3;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
-        color: var(--primary-text-color-theme-dark);
+        color: var(--primary-text-color-dark);
 }
 .subtitle{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    color: var(--secondary-text-color-theme-dark);
+    color: var(--secondary-text-color-dark);
 }
 .info-title{
     
@@ -168,7 +170,7 @@ background: #2196F3;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: var(--primary-text-color-theme-dark)
+        color: var(--primary-text-color-dark)
 }
 .name{
     
@@ -180,7 +182,7 @@ background: #2196F3;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: var(--primary-text-color-theme-dark)
+        color: var(--primary-text-color-dark)
 }
 .name-info{
         font-size: 16px;
@@ -190,7 +192,7 @@ background: #2196F3;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: var(--secondary-text-color-theme-dark)
+        color: var(--secondary-text-color-dark)
 }
 .subject{
     
@@ -201,11 +203,12 @@ background: #2196F3;
 
     letter-spacing: 0.06em;
 
-    color: var(--primary-text-color-theme-dark)
+    color: var(--primary-text-color-dark)
 }
 .text{
     font-size: 16px;
     line-height: 1.87;
+    color: var(--secondary-text-color-dark);
 }
 .webstudio{
     font-family: 'Raleway', sans-serif;
@@ -214,8 +217,9 @@ background: #2196F3;
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
+        cursor: auto;
        
-        color: var(--primary-text-color-theme-light);
+        color: var(--primary-text-color-light);
 
 }
 .footer-link{
@@ -224,7 +228,7 @@ background: #2196F3;
     line-height: 1.71;
     letter-spacing: 0.03em;
     
-    color: var(--primary-text-color-theme-light)
+    color: var(--primary-text-color-light)
 }
 .footer-link-mail{
     font-style: normal;
@@ -232,14 +236,14 @@ background: #2196F3;
         line-height: 1.71;
        letter-spacing: 0.03em;
     
-        color: var(--secondary-text-color-theme-light)
+        color:rgba(255, 255, 255, 0.6);
 }
   .footer-link-tel{
     font-style: normal;
         font-size: 14px;
         line-height: 1.71;
      letter-spacing: 0.03em;
-  color: var(--secondary-text-color-theme-light) 
+  color:rgba(255, 255, 255, 0.6);
   }
   
   .footer{
