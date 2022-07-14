@@ -1,6 +1,14 @@
 :root{
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
+    --primary-text-color-theme-dark: #212121 
+    --primary-text-color-theme-light: #FFFFFF
+    --secondary-text-color-theme-dark: #757575 
+  --secondary-text-color-theme-light: rgba(255, 255, 255, 0.6);
+--accent-btn-color: #F5F4FA
+    --accent-color: #2196F3;
+
+
 }
 .list{
     list-style: none;
@@ -13,7 +21,9 @@
 }
 
 body {
-    font-family:roboto ;
+    font-family:roboto ; 
+    font-family: var(--primary-font)
+
 }
 
 .logo{
@@ -22,9 +32,9 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-
-color: #2196F3;
 cursor: auto;
+color: var(--accent-color)
+
 
 }
 .studio{
@@ -34,7 +44,7 @@ cursor: auto;
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: black;
+        color: var(--primary-text-color-theme-dark)
 
 }
 .menu-link{
@@ -44,11 +54,11 @@ cursor: auto;
         line-height: 1.14;
         letter-spacing: 0.02em;
     
-        color: #212121
+        color: var(--primary-text-color-theme-dark)
 }
 .menu-link:hover,
 .menu-link:focus{
-color: #2196F3
+color: var(--accent-color)
 }
 .mail-link{
     
@@ -57,11 +67,11 @@ color: #2196F3
         line-height: 1.14;
         letter-spacing: 0.02em;
     
-        color: #757575;
+        color: var(--secondary-text-color-theme-dark)
 }
 .mail-link:hover,
 .mail-link:focus {
-    color: #2196F3
+    color: var(--accent-color)
 }
 .phone-namber{
     
@@ -70,12 +80,12 @@ color: #2196F3
         line-height: 1.14;
         letter-spacing: 0.02em;
     
-        color: #757575;
+        color: var(--secondary-text-color-theme-dark)
 
 }
 .phone-namber:hover,
 .phone-namber:focus{
-    color: #2196F3
+    color: var(--accent-color)
 
 }
 .btn{
@@ -87,12 +97,13 @@ color: #2196F3
     letter-spacing: 0.03em;
     cursor: pointer;
 
-    color: #212121;
+    color: var(--primary-text-color-theme-dark)
 }
 .btn:hover,
 .btn:focus{
     background: #2196F3;
     color: #FFFFFF;
+    background-color: var(--accent-btn-color);
     
     
  
@@ -106,7 +117,7 @@ color: #2196F3
         text-align: center;
         letter-spacing: 0.06em;
     
-        color: #FFFFFF;
+        color: var(--primary-text-color-theme-light)
        
             
             
@@ -126,8 +137,8 @@ color: #2196F3
         text-align: center;
         letter-spacing: 0.06em;
         cursor: pointer;
-   color: #FFFFFF;
-background: #2196F3;
+        background: #2196F3;
+   color: var(--primary-text-color-theme-light)
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -140,14 +151,14 @@ background: #2196F3;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: var(--primary-text-color-theme-dark);
 }
 .subtitle{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: var(--secondary-text-color-theme-dark);
 }
 .info-title{
     
@@ -157,7 +168,7 @@ background: #2196F3;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #212121;
+        color: var(--primary-text-color-theme-dark)
 }
 .name{
     
@@ -169,7 +180,7 @@ background: #2196F3;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #212121;
+        color: var(--primary-text-color-theme-dark)
 }
 .name-info{
         font-size: 16px;
@@ -179,7 +190,7 @@ background: #2196F3;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #757575;
+        color: var(--secondary-text-color-theme-dark)
 }
 .subject{
     
@@ -190,7 +201,7 @@ background: #2196F3;
 
     letter-spacing: 0.06em;
 
-    color: #212121;
+    color: var(--primary-text-color-theme-dark)
 }
 .text{
     font-size: 16px;
@@ -204,7 +215,7 @@ background: #2196F3;
         line-height: 1.19;
         letter-spacing: 0.03em;
        
-        color: #FFFFFF;
+        color: var(--primary-text-color-theme-light);
 
 }
 .footer-link{
@@ -213,7 +224,7 @@ background: #2196F3;
     line-height: 1.71;
     letter-spacing: 0.03em;
     
-    color: #FFFFFF;
+    color: var(--primary-text-color-theme-light)
 }
 .footer-link-mail{
     font-style: normal;
@@ -221,17 +232,17 @@ background: #2196F3;
         line-height: 1.71;
        letter-spacing: 0.03em;
     
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--secondary-text-color-theme-light)
 }
   .footer-link-tel{
     font-style: normal;
         font-size: 14px;
         line-height: 1.71;
      letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);;  
-    
+  color: var(--secondary-text-color-theme-light) 
   }
   
   .footer{
    background: #2F303A;
   }
+  
