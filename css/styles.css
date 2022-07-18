@@ -153,12 +153,14 @@ background: #2196F3;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
+        text-transform: uppercase;
         color: var(--primary-text-color-dark);
 }
 .subtitle{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    text-transform: none;
 
     color: var(--secondary-text-color-dark);
 }
@@ -170,7 +172,7 @@ background: #2196F3;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: var(--primary-text-color-dark)
+        color: var(--primary-text-color-dark);
 }
 .name{
     
