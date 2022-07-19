@@ -19,6 +19,16 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
+
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
 .list {
   list-style: none;
 }
@@ -105,6 +115,22 @@ body {
   background: #2196f3;
   color: var(--primary-text-color-light);
 }
+
+.page-nav{
+  display: flex;
+  align-items: center;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+}
+.menu{
+display: flex;
+align-items: center;
+}
+
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
